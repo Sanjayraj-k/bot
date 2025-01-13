@@ -9,3 +9,4 @@ langchain_groq
 typing_extensions
 langgraph
 sentence-transformers
+pypdf2
