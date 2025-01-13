@@ -10,3 +10,4 @@ typing_extensions
 langgraph
 sentence-transformers
 pypdf2
+gunicorn 
