@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: linear-gradient(180deg, #000, blueviolet);
+            min-height: 100vh;
+        }
+        div, section {
+            margin: 0 auto;
+            width: 380px;
+        }
+        div {
+            border: 1px #999 solid;
+            border-radius: 12px;
+            background-color: #fcfcfc;
+            margin-top: 75px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        span {
+            display: block;
+            font-size: 20px;
+            color: purple;
+            text-align: center;
+        }
+        section {
+            display: none;
+        }
+        input, button {
+            display: block;
+            margin: 0 auto;
+            width: 98%;
+            height: 45px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #d2d2d2;
+            outline: 0;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        button {
+            background-color: blueviolet;
+            color: #fff;
+        }
+        button:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="qr.js"></script>
+</head>
+<body>
+    <div>
+        <span class="caption">QR Code Generator</span>
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter text for QR code">
+        <button class="btnGenerate" type="button">Generate</button>
+    </div>
+    <section class="qr_code_output"></section>
+</body>
+</html>
